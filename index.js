@@ -24,9 +24,6 @@ async function invokeAction({ action, id, name, email, phone }) {
   }
 }
 
-
-
-// const program = new Command();
 program
   .option('-a, --action <type>', 'choose action')
   .option('-i, --id <type>', 'user id')
@@ -39,28 +36,3 @@ program.parse();
 const argv = program.opts();
 invokeAction(argv);
 
-// invokeAction({ action: "list" });
-// invokeAction({ action: "get", id: "drsAJ4SHPYqZeG-83QTVW" });
-// invokeAction({ action: "remove", id: "qdggE76Jtbfd9eWJHrssH" });
-// invokeAction({ action: "add", name: "Liz", email: "fjh@mail.com", phone: "123456" });
-
-// const path = require("path");
-// const fs = require("fs/promises");
-
-
-
-// (async () => {
-//     try {
-      
-// const contactsPath = path.join('db','contacts.json');
-//         // console.log(contactsPath);
-//         const readFile = await fs.readFile(contactsPath);
-//         // console.log(readFile.toString());
-//         const json = JSON.parse(readFile)
-//         console.log(json);
-
-
-//     } catch (err) {
-//         console.log(err);
-//   }  
-// })();
